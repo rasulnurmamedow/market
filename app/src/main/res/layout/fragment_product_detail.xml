@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".fragments.ProductDetailFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="410.dp"
+                android:paddingTop="20.dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/classic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Product Name"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription=" "
+                    android:text="100 TMT"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10.dp"
+                android:paddingBottom="10.dp"
+                android:text="Category"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam, purus quis rhoncus congue, mauris nisi venenatis diam, et hendrerit sapien risus id neque. Donec tempor laoreet lorem ac laoreet. Quisque interdum laoreet mi vel luctus. Maecenas non risus nec purus pharetra feugiat. Morbi sagittis et ex sit amet finibus. Etiam scelerisque ex ante. Integer hendrerit dui sed magna sagittis porta.  Quisque luctus justo vel tortor suscipit ullamcorper sit amet eu eros. Donec varius ultricies leo eu interdum. Nulla euismod vel justo mattis imperdiet. Integer vel augue et nulla luctus placerat sit amet at diam. Donec nibh lectus, pretium id neque non, lacinia luctus diam. Donec lobortis dolor nec diam bibendum, ac vulputate tortor molestie. In commodo dui eros, ut pretium purus sollicitudin in. Sed iaculis turpis et nisi rutrum finibus. In ut lectus volutpat, finibus risus non, luctus turpis. Morbi in lectus lacus. Sed orci nisl, ullamcorper in justo elementum, molestie tincidunt ipsum. Nunc blandit bibendum consequat. Quisque vel ligula id elit faucibus blandit ac ut sem. Integer auctor ipsum eu diam condimentum aliquam."
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
