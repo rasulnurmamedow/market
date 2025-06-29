@@ -50,6 +50,7 @@ class SearchFragment(callback: ItemCallback) : Fragment() {
                 adapter.clear()
                 viewModel.searchProducts(query.toString())
 
+
                 return true
             }
 
