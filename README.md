@@ -1,0 +1,1 @@
+applications are written purely for the portfolio. This is a cash register application for a phone written in Kotlin used xml the code is written in accordance with standards clean architecture the Api is written Retrofit 2 but now the backend has been launched locally 
